@@ -1,0 +1,48 @@
+<div class="container">
+    <h1>Juego de Características Musicales</h1>
+    <div id="quiz">
+        <div class="question">
+            <h2 id="work-title"></h2>
+        </div>
+        <div class="question">
+            <label>Melodía: ¿Cuáles son los intervalos predominantes en la melodía?</label>
+            <label><input type="radio" name="melody" value="Intervalos pequeños"> Intervalos pequeños</label>
+            <label><input type="radio" name="melody" value="Intervalos grandes"> Intervalos grandes</label>
+        </div>
+        <div class="question">
+            <label>Ritmo: ¿Cuál es el tempo de la obra?</label>
+            <label><input type="radio" name="tempo" value="Tempo lento"> Tempo lento</label>
+            <label><input type="radio" name="tempo" value="Tempo mediano"> Tempo mediano</label>
+            <label><input type="radio" name="tempo" value="Tempo rápido"> Tempo rápido</label>
+        </div>
+        <div class="question">
+            <label>Patrón Rítmico: ¿Cuál es el patrón rítmico de la obra?</label>
+            <label><input type="radio" name="rhythm" value="Patrón regular"> Patrón regular</label>
+            <label><input type="radio" name="rhythm" value="Patrón irregular"> Patrón irregular</label>
+        </div>
+        <div class="question">
+            <label>Volumen: ¿Cuál es el volumen predominante en la obra?</label>
+            <label><input type="radio" name="volume" value="Pianissimo"> Pianissimo</label>
+            <label><input type="radio" name="volume" value="Mezzopiano"> Mezzopiano</label>
+            <label><input type="radio" name="volume" value="Mezzoforte"> Mezzoforte</label>
+            <label><input type="radio" name="volume" value="Fortissimo"> Fortissimo</label>
+        </div>
+        <div class="question">
+            <label>Emoción: ¿Qué emoción provoca la obra?</label>
+            <label><input type="radio" name="emotion" value="Tristeza"> Tristeza</label>
+            <label><input type="radio" name="emotion" value="Alegría"> Alegría</label>
+            <label><input type="radio" name="emotion" value="Sorpresa"> Sorpresa</label>
+            <label><input type="radio" name="emotion" value="Miedo"> Miedo</label>
+            <label><input type="radio" name="emotion" value="Inquietud"> Inquietud</label>
+            <label><input type="radio" name="emotion" value="Tranquilidad"> Tranquilidad</label>
+            <label><input type="radio" name="emotion" value="Furia"> Furia</label>
+            <label><input type="radio" name="emotion" value="Calma"> Calma</label>
+        </div>
+        <div class="button-container">
+            <button onclick="checkAnswers()">Verificar Respuestas</button>
+            <button onclick="loadNewWork()">Nueva Obra</button>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+    <div id="overlay" class="overlay"></div>
+</div>
